@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 4000
 
 # Define the command to run your app
-CMD [ "node", "accessMysqlGraphQL.js" ]
+CMD [ "node", "index_mysql.js" ]

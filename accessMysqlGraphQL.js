@@ -34,10 +34,10 @@ const schema = buildSchema(`
 
 async function connectToDatabase() {
   const connection = await mysql.createConnection({
-    host: '', // ここをあなたのRDSのホスト名に置き換えてください
+    host: 'db-publicly-accessible-instance-1.cxyyeu6qem9f.ap-northeast-1.rds.amazonaws.com', // ここをあなたのRDSのホスト名に置き換えてください
     user: 'admin', // ここをあなたのデータベースユーザー名に置き換えてください
     database: 'recipeDB', // ここをあなたのデータベース名に置き換えてください
-    password: '', // ここをあなたのデータベースパスワードに置き換えてください
+    password: 'helloworld', // ここをあなたのデータベースパスワードに置き換えてください
     port: 3306 // MySQLのデフォルトポート。PostgreSQLの場合は5432に変更してください。
 
   });
